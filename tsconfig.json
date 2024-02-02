@@ -1,0 +1,23 @@
+{
+  "extends": "@tsconfig/node16/tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "paths": {
+      "framework/*": ["./framework/*"],
+      "app/*": ["./app/*"]
+    },
+    "esModuleInterop": true,
+    "allowJs": true,
+    "noEmit": true,
+    "moduleResolution": "node",
+    "strict": true,
+    "noImplicitAny": false,
+    "sourceMap": true,
+    "experimentalDecorators": true,
+    "resolveJsonModule": true,
+    "target": "ESNext",
+    "module": "CommonJS"
+  },
+  "include": ["src"],
+  "exclude": ["node_modules"]
+}
